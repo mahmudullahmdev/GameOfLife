@@ -24,12 +24,10 @@ struct HomeView: View {
                         // Start and generate next generations by tapping this button.
                         // Only start game when seed is placed to the chart..
                         Button(action: {
-                            if self.seedPlaced {
                                 self.generation += 1
                                 self.viewModel.startGame()
-                            }
                         }){
-                            Text(self.seedPlaced ? "Next" : "Start")
+                            Text("Next")
                                 .padding(.all, 6)
                                 .foregroundColor(.white)
                         }
@@ -69,7 +67,7 @@ struct HomeView: View {
                 }
             }
             .onAppear{
-                viewModel.initCells(rows: 144)
+                viewModel.initCells()
             }
    
         }

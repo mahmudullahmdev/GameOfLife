@@ -10,7 +10,7 @@ class HomeViewModel : ObservableObject {
     @Published var cellList:[[CellModel]] = []
     
     // Generate Columns and Rows for 12x12 matrix the playground
-    func initCells(rows:Int) {
+    func initCells() {
         var listOfColoumn:[[CellModel]] = []
         for _ in 0...11 {
             var listOfRows: [CellModel] = []
