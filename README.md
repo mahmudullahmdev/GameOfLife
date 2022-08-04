@@ -1,7 +1,7 @@
 # GameOfLife
 How to run the project ? 
   -> Clone the repository to your machine.
-  -> Open GameOfLice.xcodeproj 
+  -> Open GameOfLife.xcodeproj 
   -> Change the Team to your team in GameOfLife Project settings -> Signing & Capabilities 
   -> Select an simulator or your real device. 
   -> Run and go..
